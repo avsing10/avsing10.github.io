@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky Roll - Dice Adventure</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎲 LUCKY ROLL</h1>
+      <p class="subtitle">The Dice Adventure</p>
+      <button id="themeBtn">Change Theme 🌙</button>
+    </header>
+
+    <main>
+      <section class="game-card">
+        <h2>Create Your Character</h2>
+        <p>Enter your name or generate a random one!</p>
+
+        <input type="text" id="playerName"
+               placeholder="Enter character name">
+
+        <div class="buttons">
+          <button id="generateBtn">Generate Name</button>
+          <button id="saveBtn">Save Character</button>
+        </div>
+
+        <p id="welcomeMessage">Your adventure awaits...</p>
+
+        <hr>
+
+        <h2>Roll the Dice</h2>
+        <p>Test your luck with a 20-sided die!</p>
+
+        <div id="dice" role="button" tabindex="0"
+             aria-label="Roll the dice">?</div>
+
+        <button id="rollBtn">ROLL DICE 🎲</button>
+
+        <h3 id="rollResult">Ready to roll?</h3>
+
+        <div class="scoreboard">
+          <p>Rolls: <span id="rollCount">0</span></p>
+          <p>Points: <span id="score">0</span></p>
+        </div>
+
+        <button id="resetBtn">Reset Adventure</button>
+      </section>
+
+      <section class="story-card">
+        <h2>📜 Your Adventure</h2>
+        <div id="story">
+          <p>You wake up in a mysterious kingdom
+          surrounded by mountains and ancient castles.</p>
+
+          <p>A magical guardian approaches you and says,
+          "Welcome, traveler! Your destiny will be
+          decided by the roll of a die."</p>
+
+          <p>Will you become a legendary hero or face
+          an unexpected challenge?</p>
+
+          <p><strong>Create your character and roll
+          the dice to begin!</strong></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Lucky Roll | AME 220 Interactive Website</p>
+    </footer>
+  </div>
+</body>
+</html>
